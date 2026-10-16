@@ -7,7 +7,7 @@
           "fieldkey": "emailAddress",
           "label": "Email address",
           "description": {
-            "plaintext": "Greg, enter your email address so we can contact you."
+            "plaintext": "A valid email address so we can contact you."
           },
           "helpText": {
             "plaintext": "Use an email address you check regularly."
