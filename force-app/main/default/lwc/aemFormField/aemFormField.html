@@ -1,0 +1,38 @@
+<template>
+    <template lwc:if={loadError}>
+        <p class="load-error">{loadError}</p>
+    </template>
+
+    <template lwc:elseif={content}>
+        <div class={fieldClass}>
+            <label class="label" for="field-input">{label}</label>
+
+            <div class="hint-row">
+                <span id="field-description" class="description">{description}</span>
+                <template lwc:if={showOptional}>
+                    <span class="optional">{optionalText}</span>
+                </template>
+            </div>
+
+            <template lwc:if={errorMessage}>
+                <p id="field-error" class="error-message">{errorMessage}</p>
+            </template>
+
+            <input
+                id="field-input"
+                class="input"
+                type={inputType}
+                value={value}
+                aria-required={ariaRequired}
+                aria-invalid={ariaInvalid}
+                aria-describedby="field-description field-help field-error"
+                oninput={handleInput}
+                onblur={handleBlur}
+            />
+
+            <template lwc:if={helpText}>
+                <p id="field-help" class="help">{helpText}</p>
+            </template>
+        </div>
+    </template>
+</template>

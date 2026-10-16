@@ -1,0 +1,64 @@
+{
+  "data": {
+    "formFieldContentList": {
+      "items": [
+        {
+          "_path": "/content/dam/msd/sep/global/content-fragments/employer-forms/form-fields/email-address",
+          "fieldkey": "emailAddress",
+          "label": "Email address",
+          "description": {
+            "plaintext": "Enter your email address so we can contact you."
+          },
+          "helpText": {
+            "plaintext": "Use an email address you check regularly."
+          },
+          "validationMessages": [
+            {
+              "messagekey": "required",
+              "messagetemplate": {
+                "plaintext": "Enter your {field}."
+              }
+            },
+            {
+              "messagekey": "invalidFormat",
+              "messagetemplate": {
+                "plaintext": "Enter a valid {field}."
+              }
+            }
+          ]
+        },
+        {
+          "_path": "/content/dam/msd/sep/global/content-fragments/employer-forms/form-fields/first-name",
+          "fieldkey": "firstName",
+          "label": "First name",
+          "description": {
+            "plaintext": "Enter your first name as it appears on your identification."
+          },
+          "helpText": {
+            "plaintext": "Use your legal first name."
+          },
+          "validationMessages": [
+            {
+              "messagekey": "required",
+              "messagetemplate": {
+                "plaintext": "Enter your {field}."
+              }
+            },
+            {
+              "messagekey": "minLength",
+              "messagetemplate": {
+                "plaintext": "{field} must contain at least {minLength} characters."
+              }
+            },
+            {
+              "messagekey": "maxLength",
+              "messagetemplate": {
+                "plaintext": "{field} must not exceed {maxLength} characters."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
